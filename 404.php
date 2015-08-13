@@ -18,8 +18,6 @@ get_header(); ?>
 
 			<p><?php _e( 'Nothing could be found at this location. Maybe try a search?', '_tk' ); ?></p>
 
-			<?php get_search_form(); ?>
-
 		</div><!-- .page-content -->
 
 	</section><!-- .content-padder -->

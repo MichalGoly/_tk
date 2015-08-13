@@ -26,7 +26,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-meta">
+	<div class="entry-meta">
 		<?php
 			/* translators: used between list items, there is a space after the comma */
 			$category_list = get_the_category_list( __( ', ', '_tk' ) );
@@ -62,5 +62,5 @@
 		?>
 
 		<?php edit_post_link( __( 'Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-meta -->
+	</div><!-- .entry-meta -->
 </article><!-- #post-## -->

@@ -4,15 +4,6 @@
  */
 ?>
 
-
-<?php // Styling Tip!
-
-// Want to wrap for example the post content in blog listings with a thin outline in Bootstrap style?
-// Just add the class "panel" to the article tag here that starts below.
-// Simply replace post_class() with post_class('panel') and check your site!
-// Remember to do this for all content templates you want to have this,
-// for example content-single.php for the post single view. ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
 		<h1 class="page-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
@@ -30,7 +21,12 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', '_tk' ) ); ?>
+<?php //		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', '_tk' ) ); ?>
+		<p>
+			<?php echo get_the_excerpt(); ?>
+			<a href="<?php the_permalink(); ?>">Continue reading <span class="fa fa-arrow-right"></span></a>
+		</p>
+
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', '_tk' ),
@@ -40,7 +36,7 @@
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
-	<footer class="entry-meta">
+	<div class="entry-meta">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */
@@ -68,5 +64,5 @@
 		<?php endif; ?>
 
 		<?php edit_post_link( __( 'Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-meta -->
+	</div><!-- .entry-meta -->
 </article><!-- #post-## -->

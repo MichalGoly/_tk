@@ -36,8 +36,8 @@ function _tk_content_nav( $nav_id ) {
 
 		<?php if ( is_single() ) : // navigation links for single posts ?>
 
-			<?php previous_post_link( '<li class="nav-previous previous">%link</li>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', '_tk' ) . '</span> %title' ); ?>
-			<?php next_post_link( '<li class="nav-next next">%link</li>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', '_tk' ) . '</span>' ); ?>
+			<?php previous_post_link( '<li class="nav-previous previous">%link</li>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', '_tk' ) . '</span> Previous' ); ?>
+			<?php next_post_link( '<li class="nav-next next">%link</li>', 'Next <span class="meta-nav">' . _x( '&rarr;', 'Next post link', '_tk' ) . '</span>' ); ?>
 
 		<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
@@ -110,8 +110,8 @@ function _tk_comment( $comment, $args, $depth ) {
 								'add_below' => 'div-comment',
 								'depth' 	=> $depth,
 								'max_depth' => $args['max_depth'],
-								'before' 	=> '<footer class="reply comment-reply panel-footer">',
-								'after' 	=> '</footer><!-- .reply -->'
+								'before' 	=> '<div class="reply comment-reply panel-footer">',
+								'after' 	=> '</div><!-- .reply -->'
 							)
 						)
 					); ?>
