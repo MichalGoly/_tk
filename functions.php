@@ -105,12 +105,17 @@ function bootstrap3_comment_form_fields( $fields ) {
     $html5    = current_theme_supports( 'html5', 'comment-form' ) ? 1 : 0;
     
     $fields   =  array(
-        'author' => '<div class="form-group comment-form-author">' . '<label for="author">' . __( 'Name' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
-                    '<input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' required /></div>',
-        'email'  => '<div class="form-group comment-form-email"><label for="email">' . __( 'Email' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
-                    '<input class="form-control" id="email" name="email" ' . 'type="email"' . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' required /></div>',
+        'author' => '<div class="form-group comment-form-author">' . '<label for="author">' . __( 'Name' ) . 
+                    ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' . 
+                    '<input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . 
+                    '" size="30"' . $aria_req . ' required /></div>',
+        'email'  => '<div class="form-group comment-form-email"><label for="email">' . __( 'Email' ) . 
+                    ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' . 
+                    '<input class="form-control" id="email" name="email" ' . 'type="email"' . ' value="' . 
+                    esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' required /></div>',
         'url'    => '<div class="form-group comment-form-url"><label for="url">' . __( 'Website' ) . '</label> ' .
-                    '<input class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div>'        
+                    '<input class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . 
+                    ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div>'        
     );
     
     return $fields;
@@ -151,7 +156,8 @@ function _tk_scripts() {
 	// load bootstrap wp js
 	wp_enqueue_script( '_tk-bootstrapwp', get_template_directory_uri() . '/includes/js/bootstrap-wp.js', array('jquery') );
 
-	wp_enqueue_script( '_tk-skip-link-focus-fix', get_template_directory_uri() . '/includes/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( '_tk-skip-link-focus-fix', get_template_directory_uri() . '/includes/js/skip-link-focus-fix.js', array(), 
+      '20130115', true );
 
 	// load FlatUI js
 	wp_enqueue_script( '_tk-flatuijs', get_template_directory_uri() . '/includes/js/flat-ui.min.js', array('jquery') );
@@ -161,7 +167,8 @@ function _tk_scripts() {
 	}
 
 	if ( is_singular() && wp_attachment_is_image() ) {
-		wp_enqueue_script( '_tk-keyboard-image-navigation', get_template_directory_uri() . '/includes/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
+		wp_enqueue_script( '_tk-keyboard-image-navigation', get_template_directory_uri() . '/includes/js/keyboard-image-navigation.js', 
+         array( 'jquery' ), '20120202' );
 	}
 
 }

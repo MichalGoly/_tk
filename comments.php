@@ -27,7 +27,8 @@ if ( post_password_required() )
 		<header>
 			<h2 class="comments-title">
 				<?php
-					printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', '_tk' ),
+					printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(),
+					 'comments title', '_tk' ),
 						number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 				?>
 			</h2>
@@ -80,7 +81,8 @@ if ( post_password_required() )
 			  'cancel_reply_link' => __( 'Cancel Reply', '_tk' ),  // that's the wordpress default value! delete it or edit it ;)
 			  'label_submit'      => __( 'Post Comment', '_tk' ),  // that's the wordpress default value! delete it or edit it ;)
 
-			  'comment_field' =>  '<p><textarea placeholder="Your Reply" id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
+			  'comment_field' =>  '<p><textarea placeholder="Your Reply" id="comment" class="form-control" name="comment" cols="45" 
+			  	rows="8" aria-required="true"></textarea></p>',
 
 			  'comment_notes_after' => '<p class="form-allowed-tags">' .
 				__( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:', '_tk' ) .

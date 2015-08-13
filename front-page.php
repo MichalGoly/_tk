@@ -11,7 +11,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="author" content="Michal Goly" />
-	<meta name="description" content="My name is Michal Goly and I am a second year, Software Engineering student at Aberystwyth University in Wales" />
+	<meta name="description" content="My name is Michal Goly and I am a second year, Software Engineering 
+      student at Aberystwyth University in Wales" />
 	<meta name="keywords" content="Michal, Goly, Software, Engineering, Student, Aberystwyth, University" />
    <meta name="theme-color" content="#34495E" />
 
@@ -47,7 +48,9 @@
 				</button>
 	
 				<!-- Your site title as branding in the menu -->
-				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" 
+               title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" 
+               rel="home"><?php bloginfo( 'name' ); ?></a>
 			</div>
 
 			<!-- The WordPress Menu goes here -->
@@ -70,18 +73,26 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 vpost">
-				<img class="img-circle img-responsive" src="<?php echo get_template_directory_uri(); ?>/includes/img/profile-picture-small.jpg" alt="Profile Picture" />
+				<img class="img-circle img-responsive" src="<?php echo get_template_directory_uri(); ?>/includes/img/profile-picture-small.jpg" 
+               alt="Profile Picture" />
 			</div><!-- important comment do not remove (part of the vpost hack)
 		--><div class="col-md-6 vpost">
 				<h1>Hi there, it's nice to meet you!</h1>
 
 				<p>
-					My name is Michal Goly and I am a second year, <a href="https://courses.aber.ac.uk/undergraduate/software-engineering/" target="blank_">
-					Software Engineering</a> student at <a href="http://www.aber.ac.uk/en/" target="blank_">Aberystwyth University</a> in Wales. I have been exposed to various technologies and programming languages both at the university and while coding on my own. Most of my development so far has been done in Core Java, and I am currently starting to write web applications with Servlets and JSPs. I have been also awarded the Glyn Emery Prize for best performance by a first year Computer Science student in the academic year 2014/2015. 
+					My name is Michal Goly and I am a second year, <a href="https://courses.aber.ac.uk/undergraduate/software-engineering/" 
+               target="blank_"> Software Engineering</a> student at <a href="http://www.aber.ac.uk/en/" target="blank_">
+               Aberystwyth University</a> in Wales. I have been exposed to various technologies and programming languages both at 
+               the university and while coding on my own. Most of my development so far has been done in Core Java, and I 
+               am currently starting to write web applications with Servlets and JSPs. I have been also awarded the Glyn Emery 
+               Prize for best performance by a first year Computer Science student in the academic year 2014/2015. 
 				</p>
 
 				<p>
-					Please feel free to have a look at my <a href="https://github.com/MichalGoly" target="blank_">GitHub</a> profile to see what I am currently working on. If you would like to contact me, you can do so either on <a href="http://uk.linkedin.com/in/michalgoly" target="blank_">LinkedIn</a> or via the <a href="/contact" target="blank_">contact form</a>.
+					Please feel free to have a look at my <a href="https://github.com/MichalGoly" target="blank_">GitHub</a> profile to see 
+               what I am currently working on. If you would like to contact me, you can do so either on 
+               <a href="http://uk.linkedin.com/in/michalgoly" target="blank_">LinkedIn</a> or via the 
+               <a href="/contact" target="blank_">contact form</a>.
 				</p>
 
 			</div>
@@ -141,7 +152,8 @@
 				</div>
 				<div class="col-sm-4 credits">
 					<p>Powered by <a href="https://wordpress.org/">WordPress</a></p>
-					<p>Build on <a href="https://github.com/Themekraft/_tk" target="_blank">_tk</a> theme using <a href="https://github.com/designmodo/Flat-UI" target="_blank">FlatUI</a> components</p>
+					<p>Build on <a href="https://github.com/Themekraft/_tk" target="_blank">_tk</a> theme 
+               using <a href="https://github.com/designmodo/Flat-UI" target="_blank">FlatUI</a> components</p>
 				</div>
 			</div>
 		</div>	

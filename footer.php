@@ -21,7 +21,8 @@
 			</div>
 			<div class="col-sm-4 credits">
 				<p>Powered by <a href="https://wordpress.org/">WordPress</a></p>
-				<p>Build on <a href="https://github.com/Themekraft/_tk" target="_blank">_tk</a> theme using <a href="https://github.com/designmodo/Flat-UI" target="_blank">FlatUI</a> components</p>
+				<p>Build on <a href="https://github.com/Themekraft/_tk" target="_blank">_tk</a> 
+            theme using <a href="https://github.com/designmodo/Flat-UI" target="_blank">FlatUI</a> components</p>
 			</div>
 		</div>
 	</div>	

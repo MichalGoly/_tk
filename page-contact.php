@@ -45,7 +45,8 @@
                 </button>
     
                 <!-- Your site title as branding in the menu -->
-                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" 
+                title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
             </div>
 
             <!-- The WordPress Menu goes here -->
@@ -89,7 +90,8 @@
                 </div>
                 <div class="col-sm-4 credits">
                     <p>Powered by <a href="https://wordpress.org/">WordPress</a></p>
-                    <p>Build on <a href="https://github.com/Themekraft/_tk" target="_blank">_tk</a> theme using <a href="https://github.com/designmodo/Flat-UI" target="_blank">FlatUI</a> components</p>
+                    <p>Build on <a href="https://github.com/Themekraft/_tk" target="_blank">_tk</a> theme using
+                     <a href="https://github.com/designmodo/Flat-UI" target="_blank">FlatUI</a> components</p>
                 </div>
             </div>
         </div>  
